@@ -1,12 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk.Web">
   <PropertyGroup>
     <TargetFramework>netcoreapp3.0</TargetFramework>
+    <UserSecretsId>66e129cd-13bb-460c-94a4-ec4d50db46eb</UserSecretsId>
   </PropertyGroup>
-  <ItemGroup>&#xD;
-  </ItemGroup>
+  <ItemGroup></ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.0.1"/>
-    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.0.1"/>
-    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="3.0.1"/>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.0.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.0.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="3.0.1" />
+    <PackageReference Include="Microsoft.IdentityModel.Tokens" Version="5.6.0" />
+    <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="5.6.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="3.0.3" />
   </ItemGroup>
 </Project>

@@ -10,5 +10,6 @@ namespace ETH.API.Data
         }
 
         public DbSet<Value> Values { get; set; }
+        public DbSet<User> UserName { get; set; }
     }
 }
