@@ -1,0 +1,30 @@
+<section class="container min-container py-md-5 mt-4">
+  <div class="card-panel p-sm-5 position-relative">
+    <div class="text-center">
+      <img src="../../assets/logoicon.jpg" alt="Logo" height="50" >
+      <h2>Elite Tech Hub</h2>
+    </div>
+    <form #registerForm="ngForm" (ngSubmit)="register()" id="loginForm" class="mt-5">
+      <p class="small mb-2 text-scarlet"></p>
+      <div class="form-group position-relative">
+        <label for="email" class="sr-only">Email</label>
+        <input class="form-control input-lg rounded-0" name="username" type="text" placeholder="Username" required [(ngModel)]="model.username">
+        <i class="fa fa-user fa-lg position-absolute"></i>
+        </div>
+        <div class="form-group position-relative">
+          <label for="email" class="sr-only">Mobile Number</label>
+          <input class="form-control input-lg rounded-0" name="mobilenumber" type="tel" placeholder="Mobile Number" required [(ngModel)]="model.mobilenumber">
+          <i class="fa fa-mobile fa-lg position-absolute"></i>
+          </div>
+      <label for="password" class="pull-left sr-only">Password</label>
+      <div class="position-relative">
+        <input class="form-control input-lg rounded-0" id="password" name="password" type="password" placeholder="Password" required [(ngModel)]="model.password">
+        <i class="fa fa-lock fa-lg position-absolute"></i>
+        </div>
+      <div class="text-center my-4">
+        <button class="btn btn-primary text-white btn-lg text-uppercase" type="submit">Register</button>
+        <button class="btn btn-dark text-white btn-lg text-uppercase" (click)="cancel()" type="button">&nbsp;Cancel&nbsp;</button>
+      </div>
+    </form>
+  </div>
+</section>
